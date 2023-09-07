@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -7,6 +8,9 @@ namespace WebAppMVC.Models
 {
 	public class TodoItem
 	{
+        [Key]
+        public int id { get;set;}
+
         // 待辦事項的標題
         public string Title { get; set; }
 
