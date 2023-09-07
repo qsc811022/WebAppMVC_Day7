@@ -42,5 +42,10 @@ namespace WebAppMVC.Models
             return $"{Title} - {(IsCompleted ? "已完成" : "未完成")}";
         }
 
+		public TodoItem()
+		{
+
+		}
+
     }
 }
